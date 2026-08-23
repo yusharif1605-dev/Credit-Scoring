@@ -32,7 +32,7 @@ Build a credit default risk model using the Lending Club loan dataset, covering 
 
 ## Next steps
 
-- Complete quick EDA
+- Complete quick EDA from step 5 onwards. Once finished, study each step and understand its importance.
 - Run correlation/VIF analysis on the surviving feature set
 - Investigate missingness mechanisms for key features before choosing an imputation strategy
 - Longer-term: build out institutional/regulatory vocabulary (WOE scorecards, PD/LGD/EAD, Basel II/III, IFRS9/CECL, SR 11-7) and consider producing mock model documentation as a portfolio differentiator
