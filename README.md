@@ -16,7 +16,7 @@ Build a credit default risk model using the Lending Club loan dataset, covering 
 ## Workflow
 
 - [X] **Domain feature study** — reviewed the core credit risk concepts driving default risk (income, DTI, credit utilization, delinquency/derogatory marks, loan grade/subgrade, open credit accounts, interest rate, credit history length) before touching the data, to be able to interpret results rather than just generate them.
-- [ ] **Quick EDA** — light outlier/sanity check for impossible values (e.g. negative income, DTI outside a plausible range), using domain knowledge as a sanity-check layer on the data.
+- [X] **Quick EDA** — light outlier/sanity check for impossible values (e.g. negative income, DTI outside a plausible range), using domain knowledge as a sanity-check layer on the data.
 - [X] **Leakage screening** — automated IV (Information Value) and single-feature AUC testing on the training split only, after removing post-origination/outcome columns (payment history, recoveries, hardship/settlement fields, identifiers) so they can't leak into the target.
 - [ ] **Correlation / multicollinearity check** — pairwise correlation matrix + VIF, run after leakage screening (so leaked features don't distort it) and before imputation (so redundancy findings can inform imputation and feature selection).
 - [ ] **Missing value mechanism analysis** — understand *why* values are missing (e.g. missing-not-at-random cases like `mths_since_last_delinq`, which is often missing because the borrower was never delinquent) before deciding how to handle them.
